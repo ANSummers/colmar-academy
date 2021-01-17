@@ -20,26 +20,25 @@ div {
   width: 75px;
 }
 .navbar {
-  justify-content: flex-end;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  height: 64px;
-  width: 100%;
 }
-.darkgray {
+.nav-links {
+  display: flex;
+}
+.dimgray {
   color: dimgray;
-
   line-height: 32px;
 }
 .lightgray {
   color: lightgray;
-  margin: 20px 0;
   line-height: 32px;
 }
 nav {
   margin-right: 24px;
 }
 nav ul {
-  margin-right: 16px;
   font-size: 32px;
   list-style: none;
   justify-content: space-between;
@@ -47,6 +46,12 @@ nav ul {
 }
 nav a {
   text-decoration: none;
+  margin-right: 16px;
+  color: dimgray;
+  font-size: 28px;
+}
+.container {
+  vertical-align: center;
 }
 .learn {
   align-content: left;
