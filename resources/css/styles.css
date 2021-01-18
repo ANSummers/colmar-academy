@@ -1,45 +1,53 @@
 html {
-  display: flex;
+  display: grid;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 50px;
   color: dimgray;
   text-align: center;
-  background-color: #dddadc;
+  background-color: #d31894;
+  width: 100%;
 }
 div {
   background-color: white;
 }
-
 .logo {
   justify-content: flex-start;
-  align-items: center;
   margin-left: 24px;
-  margin-top: 24px;
+  margin-top: 10px;
   width: 75px;
+  height: 100%;
 }
-.navbar {
+header,
+.navbar,
+.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
+  height: 64px;
 }
+
 .nav-links {
   display: flex;
 }
 .dimgray {
   color: dimgray;
-  line-height: 32px;
 }
 .lightgray {
   color: lightgray;
+}
+.dimgray,
+.lightgray {
   line-height: 32px;
+  font-size: 28px;
 }
 nav {
   margin-right: 24px;
 }
 nav ul {
-  font-size: 32px;
+  font-size: 28px;
   list-style: none;
   justify-content: space-between;
   align-items: center;
@@ -50,15 +58,13 @@ nav a {
   color: dimgray;
   font-size: 28px;
 }
-.container {
-  vertical-align: center;
-}
 .learn {
   align-content: left;
   justify-content: flex-start;
   width: 60%;
   margin: 32px 24px;
   flex-direction: row;
+  background-color: rgb(130, 235, 130);
 }
 h1 {
   text-align: center;
@@ -67,6 +73,41 @@ h1 {
   background-color: dimgray;
   text-align: center;
 }
+button {
+  padding: 8px;
+  font-size: 28px;
+  width: 80%;
+  margin-bottom: 50px;
+  border: black 1px;
+  color: white;
+}
+.left {
+  float: left;
+  width: 60%;
+  background-color: rgb(231, 201, 145);
+}
 .right {
+  background-color: rgb(136, 109, 201);
+  float: right;
+}
+.picbcolumn,
+.readmore {
+  display: table-column;
   background-color: lightgray;
+  color: dimgray;
+}
+
+.readmore img {
+  float: left;
+  margin: 16px 16px;
+}
+.picgrid,
+.courses {
+  margin: 16px 16px;
+  font-size: 32px;
+  display: grid;
+  grid-template: auto auto auto auto;
+}
+.courses img {
+  float: top;
 }
