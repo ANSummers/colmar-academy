@@ -1,36 +1,50 @@
-html {
-  display: grid;
-}
+/* \\wsl$/Ubuntu/home/abbie/code/codecademy/colmar-academy/index.html */
+html,
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 50px;
-  color: dimgray;
-  text-align: center;
-  background-color: #d31894;
+  margin: 0;
+  padding: 0;
   width: 100%;
 }
-div {
-  background-color: white;
-}
-.logo {
-  justify-content: flex-start;
-  margin-left: 24px;
-  margin-top: 10px;
-  width: 75px;
-  height: 100%;
-}
-header,
-.navbar,
 .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  height: 64px;
+  position: relative;
+  width: 1170px;
+  margin: 0 auto;
+  color: dimgray;
+  font-size: 14px;
+  font-weight: 300;
+  overflow: hidden;
+  float: left;
 }
-
-.nav-links {
-  display: flex;
+div {
+  position: relative;
+}
+.hold {
+  height: 80px;
+}
+.header {
+  line-height: 80px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: white;
+}
+.header img {
+  position: relative;
+  float: left;
+  height: 100%;
+  margin-top: 24px;
+}
+div #logo {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 170px;
+  margin-left: 24px;
+}
+#colmar {
+  float: right;
+  position: relative;
 }
 .dimgray {
   color: dimgray;
@@ -38,37 +52,50 @@ header,
 .lightgray {
   color: lightgray;
 }
-.dimgray,
-.lightgray {
-  line-height: 32px;
-  font-size: 28px;
-}
-nav {
-  margin-right: 24px;
-}
-nav ul {
-  font-size: 28px;
+
+ul.nav {
+  float: right;
   list-style: none;
-  justify-content: space-between;
-  align-items: center;
+  margin: 0;
+  padding: 0;
 }
-nav a {
-  text-decoration: none;
-  margin-right: 16px;
-  color: dimgray;
-  font-size: 28px;
+ul.nav li {
+  float: right;
+  position: relative;
+}
+
+ul.nav li a {
+  font-size: 18px;
+}
+
+ul.nav li a {
+  padding: 21px;
+  color: initial;
+  text-decoration: initial;
 }
 .learn {
-  align-content: left;
-  justify-content: flex-start;
+  background-color: lightgray;
+  display: inline;
+}
+.left {
+  background-color: lightgray;
+  width: auto;
+}
+.left img {
   width: 60%;
   margin: 32px 24px;
-  flex-direction: row;
-  background-color: rgb(130, 235, 130);
+}
+.right {
+  color: dimgray;
+  text-align: center;
+  height: 100%;
+  background-color: lightgray;
+  width: 40%;
 }
 h1 {
-  text-align: center;
+  font-size: 64px;
 }
+
 .btn {
   background-color: dimgray;
   text-align: center;
@@ -76,38 +103,8 @@ h1 {
 button {
   padding: 8px;
   font-size: 28px;
-  width: 80%;
+  width: 30%;
   margin-bottom: 50px;
   border: black 1px;
   color: white;
-}
-.left {
-  float: left;
-  width: 60%;
-  background-color: rgb(231, 201, 145);
-}
-.right {
-  background-color: rgb(136, 109, 201);
-  float: right;
-}
-.picbcolumn,
-.readmore {
-  display: table-column;
-  background-color: lightgray;
-  color: dimgray;
-}
-
-.readmore img {
-  float: left;
-  margin: 16px 16px;
-}
-.picgrid,
-.courses {
-  margin: 16px 16px;
-  font-size: 32px;
-  display: grid;
-  grid-template: auto auto auto auto;
-}
-.courses img {
-  float: top;
 }
