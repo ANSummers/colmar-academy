@@ -5,15 +5,17 @@ body {
   padding: 0;
   width: 100%;
 }
+.section {
+  width: 100%;
+  background: lightgray;
+}
 .container {
   position: relative;
-  width: 1170px;
-  margin: 0 auto;
-  color: dimgray;
-  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  font-size: 32px;
   font-weight: 300;
   overflow: hidden;
-  float: left;
 }
 div {
   position: relative;
@@ -94,6 +96,8 @@ ul.nav li a {
 }
 h1 {
   font-size: 64px;
+  text-align: center;
+  color: dimgray;
 }
 
 .btn {
@@ -107,4 +111,41 @@ button {
   margin-bottom: 50px;
   border: black 1px;
   color: white;
+}
+.col {
+  float: left;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.col.three {
+  width: 30%;
+  margin: 10px 18px;
+  background-color: white;
+}
+.col .course {
+  font-size: 32px;
+  font-weight: 300;
+  text-align: left;
+  color: rgb(68, 67, 67);
+}
+.col p,
+.col h3 {
+  text-align: left;
+  font-size: 24px;
+  margin: 8px 16px;
+}
+.col h3 {
+  margin-top: 16px;
+}
+.col p {
+  color: dimgray;
+}
+.col .imgholder {
+  height: auto;
+  width: 100%;
+}
+.col .imgholder img {
+  width: 100%;
+  height: auto;
 }
